@@ -1,0 +1,8 @@
+1,1,1,main.valid
+2,2,1,main.devAddress
+3,3,1,main.clicks
+4,-1,0,main.isValid.out
+5,-1,0,main.isValid.in[0]
+6,-1,0,main.isValid.in[1]
+7,-1,0,main.isValid.diff
+8,-1,0,main.isValid.isZero

@@ -1,0 +1,48 @@
+{
+  "name": "adbase-package",
+  "version": "1.0.2",
+  "description": "Adbase package for devs",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --extensions \".js,.jsx,.ts,.tsx\" --out-dir dist",
+    "prepublish": "rm -rf ./dist && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhay-2811/AdBase.git"
+  },
+  "keywords": [
+    "ads"
+  ],
+  "author": "Abhay Upadhyay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abhay-2811/AdBase/issues"
+  },
+  "homepage": "https://github.com/Abhay-2811/AdBase#readme",
+  "peerDependencies": {
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1",
+    "viem": "2.x",
+    "wagmi": "^2.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@coinbase/wallet-sdk": "^4.0.3",
+    "@tanstack/react-query": "^5.48.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1",
+    "typescript": "^5.5.2",
+    "undici-types": "^6.19.2",
+    "viem": "^2.16.2",
+    "wagmi": "^2.10.7",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

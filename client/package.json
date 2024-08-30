@@ -1,0 +1,47 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^4.0.3",
+    "@nextui-org/react": "^2.4.2",
+    "@particle-network/btc-connectkit": "^1.0.0-alpha.26",
+    "@particle-network/chains": "^1.6.7",
+    "@pinata/sdk": "^2.1.0",
+    "@preact/signals-react": "^2.2.0",
+    "@pwrjs/core": "^0.5.4",
+    "@tanstack/react-query": "^5.45.1",
+    "@types/react-custom-scrollbars": "^4.0.13",
+    "axios": "^1.7.2",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.2.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "simplex-noise": "^4.0.1",
+    "tailwind-merge": "^2.3.0",
+    "viem": "^2.16.2",
+    "wagmi": "^2.10.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.0"
+  }
+}
