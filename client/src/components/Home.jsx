@@ -45,16 +45,9 @@ const TypewriterEffectSmoothDemo = () => {
       text: "with",
     },
     {
-      text: "Merlin-Ads.",
+      text: "Particle-Ads.",
       className: "text-purple-500 dark:text-purple-500",
-    },
-    {
-      text: "powered by",
-    },
-    {
-      text: "PWR & Particle-Network",
-      className: "text-purple-500 dark:text-purple-500",
-    },
+    }
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
