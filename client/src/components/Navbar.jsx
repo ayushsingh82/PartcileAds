@@ -1,7 +1,9 @@
 import React from "react";
-import { BlackCreateWalletButton } from "../BlackCreateWalletButton";
-import { CoinbaseWalletLogo } from "../CoinbaseWalletLogo";
+// import { BlackCreateWalletButton } from "../BlackCreateWalletButton";
+// import { CoinbaseWalletLogo } from "../CoinbaseWalletLogo";
+
 import { useAccount } from "wagmi";
+import { ConnectButton } from '@particle-network/connectkit';
 
 const gradientStyle = {
   background:
@@ -12,7 +14,7 @@ const gradientStyle = {
 };
 
 function Navbar() {
-  const { address, isConnected } = useAccount();
+  // const { address, isConnected } = useAccount();
   return (
     <navbar className="sticky top-0 z-50">
       <div className="flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black ">
@@ -31,7 +33,7 @@ function Navbar() {
             <a href="/landing">Campaigns</a>
           </h1>
           <div className="text-white">
-           Wallet
+          <ConnectButton />
           </div>
         </div>
       </div>

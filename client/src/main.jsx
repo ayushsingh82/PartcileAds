@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { useState } from "react";
-import App from "./App.jsx";
+// import { useState } from "react";
+// import App from "./App.jsx";
 import "./index.css";
 import Home from "./components/Home.jsx";
 import Create from "./components/Create.jsx";
@@ -18,6 +18,7 @@ import Landing from "./components/Landing.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Dashboard from "./components/Dashboard.jsx";
 import { NextUIProvider } from "@nextui-org/react";
+import { ParticleConnectkit } from './components/connectkit.jsx';
 // import PWR from "./components/PWR.jsx"
 
 // import {
@@ -34,8 +35,8 @@ import { NextUIProvider } from "@nextui-org/react";
 // import { MerlinTestnet, Merlin, LumiBitTestnet, PolygonMumbai, BEVMTestnet, BEVM, MAPProtocolTestnet, MAPProtocol, SatoshiVMTestnet, BSquaredTestnet, AINNTestnet, Mantle, BitlayerTestnet, BotanixTestnet, PolygonzkEVMCardona  } from '@particle-network/chains';
 
 // Assuming WagmiProvider and config are imported correctly
-import { WagmiProvider } from "wagmi";
-import { config } from "./wagmi.ts";
+// import { WagmiProvider } from "wagmi";
+// import { config } from "./wagmi.ts";
 
 const queryClient = new QueryClient();
 
@@ -54,16 +55,14 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>
+  <ParticleConnectkit>
  
         <NextUIProvider>
           <Navbar />
           <RouterProvider router={router} />
         </NextUIProvider>
 
-      </QueryClientProvider>
-    </WagmiProvider>
+        </ParticleConnectkit>
   </React.StrictMode>
 );
 

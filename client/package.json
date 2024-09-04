@@ -14,6 +14,7 @@
     "@nextui-org/react": "^2.4.2",
     "@particle-network/btc-connectkit": "^1.0.0-alpha.26",
     "@particle-network/chains": "^1.6.7",
+    "@particle-network/connectkit": "^2.0.4",
     "@pinata/sdk": "^2.1.0",
     "@preact/signals-react": "^2.2.0",
     "@pwrjs/core": "^0.5.4",
@@ -28,7 +29,7 @@
     "react-router-dom": "^6.23.1",
     "simplex-noise": "^4.0.1",
     "tailwind-merge": "^2.3.0",
-    "viem": "^2.16.2",
+    "viem": "^2.21.1",
     "wagmi": "^2.10.2"
   },
   "devDependencies": {
